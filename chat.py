@@ -3,7 +3,7 @@ import json
 import torch
 from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
-from train import FILE
+
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
@@ -33,9 +33,9 @@ while True:
         break
 
     sentence = tokenize(sentence)
-    X = bag_of_words(sentence, all_worlds)
+    X = bag_of_words(sentence, all_words)
     X = X.reshape(1, X.shape[0])
-    X = torch.from_numpy(X)
+    X = torch.from_numpy(X).to(device)
 
     output = model(X)
     _, predicted = torch.max(output, dim=1)
