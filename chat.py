@@ -33,3 +33,14 @@ while True:
         break
 
 sentence = tokenize(sentence)
+X = bag_of_words(sentence, all_worlds)
+X = X.reshape(1, X.shape[0])
+X = torch.from_numpy()
+
+output = model(X)
+_, predicted = torch.max(output, dim=1)
+tag = tags[predicted.item()]
+
+for intent in intents["intents"]:
+    if tag == intent["tag"]:
+        print(f"{bot_name}: {random.choice(intent["responses"])}")
