@@ -1,11 +1,14 @@
 import random
 import json
 import torch
+import speech_recognition as sr
+import pyttsx3
 from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
 
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+r = sr.Recognizer()
 
 with open('intents.json', 'r') as f:
     intents = json.load(f)
@@ -24,11 +27,43 @@ model = NeuralNet(input_size, hidden_size, output_size).to(device)
 model.load_state_dict(model_state)
 model.eval()
 
-bot_name = "Dr Sam"
-print("Let's chat! type 'quit' to exit")
+
+
+def speckText(command):
+    engine = pyttsx3.init()
+    engine.say(command)
+    engine.runAndWait()
+
+def speech_to_text():
+    while(1):
+        try:
+            # use microphone
+            with sr.Microphone() as source2:
+                r.adjust_for_ambient_noise(source2, duration=0.2)
+
+                # listens to audio
+                audio2 = r.listen(source2)
+
+                # using google to recognize audio
+                MyText = r.recognize_google(audio2)
+                return MyText
+
+        except sr.RequestError as e:
+            print("Could not request results; {0}".format(e))
+
+        except sr.UnknownValueError:
+            print("unkbown error occured")
+
+
+
+
+bot_name = "Medbot"
+
 
 while True:
-    sentence = input("You: ")
+    sentence = speech_to_text()
+    print("Let's chat! Say 'quit' to exit")
+    print(f"You: {sentence}")
     if sentence == "quit":
         break
 
@@ -47,6 +82,10 @@ while True:
     if prob.item() > 0.70:
         for intent in intents["intents"]:
             if tag == intent["tag"]:
-                print(f"{bot_name}: {random.choice(intent['responses'])}\n")
+                response = random.choice(intent['responses'])
+                print(f"{bot_name}: {response}\n")
+                speckText(response)
+                
     else:
         print(f"{bot_name}: I do not understand...")
+        speckText("I do not understand")
