@@ -5,6 +5,7 @@ import speech_recognition as sr
 import pyttsx3
 from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
+from flask import Flask, request, jsonify
 
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -39,6 +40,7 @@ def speech_to_text():
         try:
             # use microphone
             with sr.Microphone() as source2:
+                print("Listening...")
                 r.adjust_for_ambient_noise(source2, duration=0.2)
 
                 # listens to audio
@@ -46,6 +48,8 @@ def speech_to_text():
 
                 # using google to recognize audio
                 MyText = r.recognize_google(audio2)
+                MyText = MyText.lower()
+                print(MyText)
                 return MyText
 
         except sr.RequestError as e:
@@ -58,16 +62,10 @@ def speech_to_text():
 
 
 bot_name = "Medbot"
+print("Let's chat! Say 'quit' to exit")
 
-
-while True:
-    sentence = speech_to_text()
-    print("Let's chat! Say 'quit' to exit")
-    print(f"You: {sentence}")
-    if sentence == "quit":
-        break
-
-    sentence = tokenize(sentence)
+def sen_token(human_input):
+    sentence = tokenize(human_input)
     X = bag_of_words(sentence, all_words)
     X = X.reshape(1, X.shape[0])
     X = torch.from_numpy(X).to(device)
@@ -79,13 +77,39 @@ while True:
     probs = torch.softmax(output, dim=1)
     prob = probs[0][predicted.item()]
 
-    if prob.item() > 0.70:
+    if prob.item() > 0.80:
         for intent in intents["intents"]:
             if tag == intent["tag"]:
                 response = random.choice(intent['responses'])
-                print(f"{bot_name}: {response}\n")
-                speckText(response)
+                return (response)
+                # speckText(response)
                 
     else:
-        print(f"{bot_name}: I do not understand...")
-        speckText("I do not understand")
+        return ("I do not understand...")
+        
+
+
+app = Flask(__name__)
+
+@app.route('/predict', methods=['POST'])
+def predict():
+    if request.method == 'POST':
+        input_data = str(request.data)
+        input_data = input_data.removeprefix("b'")
+        input_data = input_data.removesuffix("'")
+        # print(input_data)
+        if input_data is None:
+            return jsonify({'error': 'no input'})
+
+    try:
+        sentence = input_data
+        response = sen_token(sentence)
+        return response
+    except:
+        return jsonify({'error': 'error during prediction'})
+
+
+# while True:
+#     respones = sen_token(speech_to_text())
+#     print(respones)
+#     speckText(respones)
