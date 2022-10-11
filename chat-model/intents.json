@@ -11,6 +11,26 @@
              "responses":["have a nice day","goodbye"]
             },
             {
+                "tag": "jokes",
+                "patterns": [
+                    "Tell me a joke",
+                    "Joke",
+                    "Make me laugh"
+                ],
+                "responses": [
+                    "A perfectionist walked into a bar...apparently, the bar wasn't set high enough",
+                    "I ate a clock yesterday, it was very time-consuming",
+                    "Never criticize someone until you've walked a mile in their shoes. That way, when you criticize them, they won't be able to hear you from that far away. Plus, you'll have their shoes.",
+                    "The world tongue-twister champion just got arrested. I hear they're gonna give him a really tough sentence.",
+                    "I own the world's worst thesaurus. Not only is it awful, it's awful.",
+                    "What did the traffic light say to the car? \"Don't look now, I'm changing.\"",
+                    "What do you call a snowman with a suntan? A puddle.",
+                    "How does a penguin build a house? Igloos it together",
+                    "I went to see the doctor about my short-term memory problems the first thing he did was make me pay in advance",
+                    "As I get older and I remember all the people Ive lost along the way, I think to myself, maybe a career as a tour guide wasnt for me.",
+                    "o what if I don't know what 'Armageddon' means? It's not the end of the world."]
+            },
+            {
              "tag":"age",
              "patterns": ["how old","how old are you?","what is your age","how old are you","age?"],
              "responses":["I get reborn after every compilation","my developers are averagely 20 years!"]
@@ -82,10 +102,19 @@
             },
             {
              "tag":"common cold prevention",
-             "patterns":["What medicines can I buy to help me with my common cold?",
-                            "tell me some prevention method from common cold",
+             "patterns":["What can I do to avoid getting common cold?",
+                            "tell me some prevention method for common cold",
                             "What should I eat or drink if i am suffering from common cold?",
-                            "How can I keep from getting a cold or the flu?"],
+                            "How can I avoid getting a cold or flu?"],
+             "responses":["Preventions that you must follow: Wash your hands regularly, Avoid touching your face, Clean frequently used surfaces,Use hand sanitizers. SUGGESTED FOODS ARE: Garlic, Vitamin C containing fruits, Leafy greens, Broccoli, Oatmeal, Spices, Chicken Soup"]
+            },
+            {
+             "tag":"common cold medicine",
+             "patterns":["What medicines or drug can I buy to help me with my common cold?",
+                               "what medicine can I take for common cold?",
+                               "What drug is best for common cold?",
+                               "what medication can I take for common cold?",
+                               "Drug or medicine for common cold"],
              "responses":["medicines you can consume: Dextromethorphan, Decongestant, Diphenhydramine, Crocin Cold & Flu Max. Preventions that you must follow: Wash your hands, Avoid touching your face, Clean frequently used surfaces,Use hand sanitizers. SUGGESTED FOODS ARE: Garlic, Vitamin C containing fruits, Leafy greens, Broccoli, Oatmeal, Spices, Chicken Soup"]
             },
             {
