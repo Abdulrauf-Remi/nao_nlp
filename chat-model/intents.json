@@ -106,7 +106,7 @@
                             "tell me some prevention method for common cold",
                             "What should I eat or drink if i am suffering from common cold?",
                             "How can I avoid getting a cold or flu?"],
-             "responses":["Preventions that you must follow: Wash your hands regularly, Avoid touching your face, Clean frequently used surfaces,Use hand sanitizers. SUGGESTED FOODS ARE: Garlic, Vitamin C containing fruits, Leafy greens, Broccoli, Oatmeal, Spices, Chicken Soup"]
+             "responses":["Preventions that you must follow: Wash your hands regularly, Avoid touching your face, Clean frequently used surfaces, Use hand sanitizers. SUGGESTED FOODS ARE: Garlic, Vitamin C containing fruits, Leafy greens, Broccoli, Oatmeal, Spices, Chicken Soup"]
             },
             {
              "tag":"common cold medicine",
@@ -115,13 +115,38 @@
                                "What drug is best for common cold?",
                                "what medication can I take for common cold?",
                                "Drug or medicine for common cold"],
-             "responses":["medicines you can consume: Dextromethorphan, Decongestant, Diphenhydramine, Crocin Cold & Flu Max. Preventions that you must follow: Wash your hands, Avoid touching your face, Clean frequently used surfaces,Use hand sanitizers. SUGGESTED FOODS ARE: Garlic, Vitamin C containing fruits, Leafy greens, Broccoli, Oatmeal, Spices, Chicken Soup"]
+             "responses":["medicines you can consume: Dextromethorphan, Decongestant, Diphenhydramine, Crocin Cold & Flu Max."]
+            },
+            {
+                "tag":"common cold food",
+                "patterns":["What can I do to avoid getting common cold?",
+                               "tell me some foods I can take for common cold",
+                               "What should I eat or drink if i am suffering from common cold?",
+                               "What food is best for person having common cold"],
+                "responses":["SUGGESTED FOODS you may comsume are: Garlic, Vitamin C containing fruits, Leafy greens, Broccoli, Oatmeal, Spices, Chicken Soup"]
             },
             {
              "tag":"fever prevention",
              "patterns":["What medicines can I buy to help me with my fever?","tell me some prevention method from fever","What should I eat or drink if i am suffering from fever?","How can I keep from getting a fever?"],
-             "responses":["medicines you can consume : acetaminophen ,ibuprofen,aspirin,Crocin Cold & Flu Max, prevention that you must follow :Wash your hands,Cover your mouth when you cough and your nose when you sneeze,Clean frequently used surfaces,Avoid sharing cups, glasses, and eating utensils with other people.,SUGGESTED FOODS ARE:Garlic,Vitamin C containing fruits,Leafy greens,Broccoli,Oatmeal,Spices,Chicken Soup"]
+             "responses":["prevention that you must follow :Wash your hands,Cover your mouth when you cough and your nose when you sneeze,Clean frequently used surfaces,Avoid sharing cups, glasses, and eating utensils with other people.,SUGGESTED FOODS ARE:Garlic,Vitamin C containing fruits,Leafy greens,Broccoli,Oatmeal,Spices,Chicken Soup"]
             },
+            {
+                "tag":"fever medicine",
+                "patterns":["What medicines or drug can I buy to help me with my fever?",
+                                  "what medicine can I take for fever?",
+                                  "What drug is best for fever?",
+                                  "what medication can I take for fever?",
+                                  "Drug or medicine for fever"],
+                "responses":["medicines you can consume : acetaminophen ,ibuprofen,aspirin,Crocin Cold & Flu Max."]
+               },
+               {
+                   "tag":"common cold food",
+                   "patterns":["What can I do to avoid getting common cold?",
+                                  "tell me some foods I can take for common cold",
+                                  "What should I eat or drink if i am suffering from common cold?",
+                                  "What food is best for person having common cold"],
+                   "responses":["SUGGESTED FOODS you may comsume are: Garlic, Vitamin C containing fruits, Leafy greens, Broccoli, Oatmeal, Spices, Chicken Soup"]
+               },
             {
              "tag":"diabetes prevention",
              "patterns":["What medicines can I buy to help me with my diabetes?","tell me some prevention method from diabetes","What should I eat or drink if i am suffering from diabetes?","How can I keep from getting diabetes?"],
