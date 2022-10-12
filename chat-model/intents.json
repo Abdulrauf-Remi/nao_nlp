@@ -132,7 +132,7 @@
                            "tell me some prevention method for fever",
                             "What should I do if i am suffering from fever?",
                             "How can I avoid getting a fever?",
-                            "Any Preventions for common fever"],
+                            "Any Preventions for fever"],
              "responses":["prevention that you must follow: Wash your hands, Cover your mouth when you cough and your nose when you sneeze, Clean frequently used surfaces, Avoid sharing cups, glasses, and eating utensils with other people."]
             },
             {
@@ -152,11 +152,6 @@
                                   "What food is best for person having fever"],
                    "responses":["SUGGESTED FOODS you may comsume are: Garlic, Vitamin C containing fruits, Leafy greens, Broccoli, Oatmeal, Spices, Chicken Soup"]
                },
-            {
-             "tag":"#diabetes prevention",
-             "patterns":["What medicines can I buy to help me with my diabetes?","tell me some prevention method from diabetes","What should I eat or drink if i am suffering from diabetes?","How can I keep from getting diabetes?"],
-             "responses":[" "]
-            },
             {
                 "tag":"diabetes prevention",
                 "patterns":["What can I do to avoid getting diabetes?",
@@ -184,9 +179,11 @@
                    "responses":["SUGGESTED FOODS ARE: Leafy greens, Avocados, Eggs"]
                },
             {
-             "tag":"#depression prevention",
-             "patterns":["What medicines can I buy to help me with my depression?","tell me some prevention method from depression","What should I eat or drink if i am suffering from depression?","How can I keep from getting depression?"],
-             "responses":[""]
+             "tag":"typhoid symptoms duration",
+             "patterns":["I have been having these symptoms for three days",
+             "I have been suffering from these symptoms less than a week now",
+             "I started exprencing these symptoms 3 day ago"],
+             "responses":["early stage of typhoid"]
             },
             {
                 "tag":"depression prevention",
@@ -214,12 +211,7 @@
                                   "What food is best for person having depression"],
                    "responses":["Get Enough Vitamin D,Include Omega-3 and Fatty Acids, Beans and legumes"]
                },
-            {
-             "tag":"asthma prevention",
-             "patterns":["What medicines can I buy to help me with my asthma?","tell me some prevention method from asthma","What should I eat or drink if i am suffering from asthma?","How can I keep from getting asthma?"],
-             "responses":[" "]
-            },
-            {
+               {
                 "tag":"asthma prevention",
                 "patterns":["What can I do to avoid getting asthma?",
                                "tell me some prevention method for asthma",
