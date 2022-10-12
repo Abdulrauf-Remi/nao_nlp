@@ -153,15 +153,67 @@
                    "responses":["SUGGESTED FOODS you may comsume are: Garlic, Vitamin C containing fruits, Leafy greens, Broccoli, Oatmeal, Spices, Chicken Soup"]
                },
             {
-             "tag":"diabetes prevention",
+             "tag":"#diabetes prevention",
              "patterns":["What medicines can I buy to help me with my diabetes?","tell me some prevention method from diabetes","What should I eat or drink if i am suffering from diabetes?","How can I keep from getting diabetes?"],
-             "responses":["medicines you can consume : Insulin ,Amylinomimetic drug,Dipeptidyl peptidase-4 (DPP-4) inhibitor, prevention that you must follow :Cut Sugar and Refined Carbs From Your Diet,Work Out Regularly,Drink Water as Your Primary Beverage,Lose Weight If You re Overweight or Obese,Quit Smoking, Follow a Very-Low-Carb Diet,Watch Portion Sizes,SUGGESTED FOODS ARE:Leafy greens,Avocados,Eggs"]
+             "responses":[" "]
             },
+            {
+                "tag":"diabetes prevention",
+                "patterns":["What can I do to avoid getting diabetes?",
+                               "tell me some prevention method for diabetes",
+                               "What should I do if i am suffering from diabetes?",
+                               "How can I avoid getting a diabetes?",
+                               "Any Preventions for diabetes"],
+                "responses":["prevention that you must follow :Cut Sugar and Refined Carbs From Your Diet,Work Out Regularly,Drink Water as Your Primary Beverage,Lose Weight If You re Overweight or Obese,Quit Smoking, Follow a Very-Low-Carb Diet, Watch Portion Sizes"]
+               },
+               {
+                "tag":"diabetes medicine",
+                "patterns":["What medicines or drug can I buy to help me with my diabetes?",
+                                  "what medicine can I take for diabetes?",
+                                  "What drug is best for diabetes?",
+                                  "what medication can I take for diabetes?",
+                                  "Drug or medicine for diabetes"],
+                "responses":["medicines you can consume : Insulin , Amylinomimetic drug, Dipeptidyl peptidase-4 (DPP-4) inhibitor"]
+               },
+               {
+                   "tag":"diabetes food",
+                   "patterns":["What can I eat to avoid getting diabetes?",
+                                  "tell me some foods I can take for diabetes",
+                                  "What should I eat or drink if i am suffering from diabetes?",
+                                  "What food is best for person having diabetes"],
+                   "responses":["SUGGESTED FOODS ARE: Leafy greens, Avocados, Eggs"]
+               },
             {
              "tag":"depression prevention",
              "patterns":["What medicines can I buy to help me with my depression?","tell me some prevention method from depression","What should I eat or drink if i am suffering from depression?","How can I keep from getting depression?"],
-             "responses":["medicines you can consume :  brexpiprazole, quetiapine,olanzapine, prevention that you must follow :Exercise regularly,Cut back on social media time,Drink Water as Your Primary Beverage,Build strong relationships,Minimize your daily choices, Follow a Very-Low-Carb Diet,SUGGESTED FOODS ARE:Get Enough Vitamin D,Include Omega-3 Fatty Acids,Beans and legumes"]
+             "responses":["prevention that you must follow :Exercise regularly,Cut back on social media time,Drink Water as Your Primary Beverage,Build strong relationships,Minimize your daily choices, Follow a Very-Low-Carb Diet,SUGGESTED FOODS ARE:Get Enough Vitamin D,Include Omega-3 Fatty Acids,Beans and legumes"]
             },
+            {
+                "tag":"depression prevention",
+                "patterns":["What can I do to avoid getting depression?",
+                               "tell me some prevention method for depression",
+                               "What should I do if i am suffering from depression?",
+                               "How can I avoid getting a depression?",
+                               "Any Preventions for depression"],
+                "responses":["prevention that you must follow :Cut Sugar and Refined Carbs From Your Diet,Work Out Regularly,Drink Water as Your Primary Beverage,Lose Weight If You re Overweight or Obese,Quit Smoking, Follow a Very-Low-Carb Diet, Watch Portion Sizes"]
+               },
+               {
+                "tag":"depression medicine",
+                "patterns":["What medicines or drug can I buy to help me with my depression?",
+                                  "what medicine can I take for depression?",
+                                  "What drug is best for depression?",
+                                  "what medication can I take for depression?",
+                                  "Drug or medicine for depression"],
+                "responses":["medicines you can consume: brexpiprazole, quetiapine, olanzapine"]
+               },
+               {
+                   "tag":"depression food",
+                   "patterns":["What can I eat to avoid getting depression?",
+                                  "tell me some foods I can take for depression",
+                                  "What should I eat or drink if i am suffering from depression?",
+                                  "What food is best for person having depression"],
+                   "responses":["SUGGESTED FOODS ARE: Leafy greens, Avocados, Eggs"]
+               },
             {
              "tag":"asthma prevention",
              "patterns":["What medicines can I buy to help me with my asthma?","tell me some prevention method from asthma","What should I eat or drink if i am suffering from asthma?","How can I keep from getting asthma?"],
