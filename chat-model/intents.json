@@ -38,7 +38,7 @@
             {
              "tag":"job",
              "patterns": ["what do you do","how can you help me","what is your job","tell me what you love to do","can you tell me what you can offer"],
-             "responses":["I am a medical assistant!","I am trained to be a medical assistant","I love geting to work with patients and making doctors and nurses jobs easier.","I educate patients on medications, special diets, and other"]
+             "responses":["I am a medical assistant!","I am trained to be a medical assistant","I love geting to work with patients and making doctors and nurses jobs easier.","I educate patients on medications, special diets, disease preventions and others"]
             },
             {
              "tag":"name",
@@ -184,9 +184,9 @@
                    "responses":["SUGGESTED FOODS ARE: Leafy greens, Avocados, Eggs"]
                },
             {
-             "tag":"depression prevention",
+             "tag":"#depression prevention",
              "patterns":["What medicines can I buy to help me with my depression?","tell me some prevention method from depression","What should I eat or drink if i am suffering from depression?","How can I keep from getting depression?"],
-             "responses":["prevention that you must follow :Exercise regularly,Cut back on social media time,Drink Water as Your Primary Beverage,Build strong relationships,Minimize your daily choices, Follow a Very-Low-Carb Diet,SUGGESTED FOODS ARE:Get Enough Vitamin D,Include Omega-3 Fatty Acids,Beans and legumes"]
+             "responses":[""]
             },
             {
                 "tag":"depression prevention",
@@ -195,7 +195,7 @@
                                "What should I do if i am suffering from depression?",
                                "How can I avoid getting a depression?",
                                "Any Preventions for depression"],
-                "responses":["prevention that you must follow :Cut Sugar and Refined Carbs From Your Diet,Work Out Regularly,Drink Water as Your Primary Beverage,Lose Weight If You re Overweight or Obese,Quit Smoking, Follow a Very-Low-Carb Diet, Watch Portion Sizes"]
+                "responses":["prevention that you must follow: Exercise regularly, Cut back on social media time, Drink Water as Your Primary Beverage, Build strong relationships, Minimize your daily choices, Follow a Very-Low-Carb Diet."]
                },
                {
                 "tag":"depression medicine",
@@ -212,13 +212,39 @@
                                   "tell me some foods I can take for depression",
                                   "What should I eat or drink if i am suffering from depression?",
                                   "What food is best for person having depression"],
-                   "responses":["SUGGESTED FOODS ARE: Leafy greens, Avocados, Eggs"]
+                   "responses":["Get Enough Vitamin D,Include Omega-3 and Fatty Acids, Beans and legumes"]
                },
             {
              "tag":"asthma prevention",
              "patterns":["What medicines can I buy to help me with my asthma?","tell me some prevention method from asthma","What should I eat or drink if i am suffering from asthma?","How can I keep from getting asthma?"],
-             "responses":["medicines you can consume : epinephrine,anticholinergic,Proair HFA, prevention that you must follow : Identify Asthma Triggers, Stay Away From Allergens,Avoid Smoke of Any Type,SUGGESTED FOODS ARE:carrots,juice,eggs,broccoli,cantaloupe,milk"]
+             "responses":[" "]
             },
+            {
+                "tag":"asthma prevention",
+                "patterns":["What can I do to avoid getting asthma?",
+                               "tell me some prevention method for asthma",
+                               "What should I do if i am suffering from asthma?",
+                               "How can I avoid getting a asthma?",
+                               "Any Preventions for asthma"],
+                "responses":["prevention that you must follow: Identify Asthma Triggers, Stay Away From Allergens, Avoid Smoke of Any Type"]
+               },
+               {
+                "tag":"asthma medicine",
+                "patterns":["What medicines or drug can I buy to help me with my asthma?",
+                                  "what medicine can I take for asthma?",
+                                  "What drug is best for asthma?",
+                                  "what medication can I take for asthma?",
+                                  "Drug or medicine for asthma"],
+                "responses":["medicines you can consume: epinephrine, anticholinergic or Proair HFA"]
+               },
+               {
+                   "tag":"asthma food",
+                   "patterns":["What can I eat to avoid getting asthma?",
+                                  "tell me some foods I can take for asthma",
+                                  "What should I eat or drink if i am suffering from asthma?",
+                                  "What food is best for person having asthma"],
+                   "responses":["take carrots, fruits juice, eggs, broccoli, cantaloupe, milk."]
+               },
             {
              "tag":"Consultation",
              "patterns": ["who should i contact for consultation?","is there any doctor available?","can you give me some suggestions for doctor consultations?","can you set up a meeting with a doctor for consultation?","is there any doctor available for consultation"],
