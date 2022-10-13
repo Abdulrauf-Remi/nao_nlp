@@ -3,13 +3,23 @@
             {
              "tag":"greetings",
              "patterns": ["hello","hey","hi","good day","greetings","what's up?","how is it going"],
-             "responses":["hello","hey!","what can i do for you?"]
+             "responses":["hello, how are you","hey! how do you feel today","Hello, what can i do for you?","Hi there, how can I help?"]
             },
             {
              "tag":"goodbye",
              "patterns": ["cya","see you later","goodbye","have a good day","bye","cao","see ya"],
-             "responses":["have a nice day","goodbye"]
+             "responses":["have a nice day","goodbye","bye, and I wish you speedy recovery"]
             },
+            {
+                "tag":"Thank you",
+                "patterns": ["Thanks","Thank you","I appreciate your help","that's imformative","Thank for helping me out"],
+                "responses":["You are welcome!","Happy to help!","Any time!","My pleasure"]
+               },
+               {
+                "tag":"greetings response",
+                "patterns": ["I am fine","I am not feeling well","I am not well","I am sick"],
+                "responses":["How can I help you!","What is wrong with you!","What symptoms have you been exprencing lately!"]
+               },
             {
                 "tag": "jokes",
                 "patterns": [
@@ -17,7 +27,7 @@
                     "Joke",
                     "Make me laugh"
                 ],
-                "responses": [
+                "responses": ["How do you make holy water? you boil the hell out of it",
                     "A perfectionist walked into a bar...apparently, the bar wasn't set high enough",
                     "I ate a clock yesterday, it was very time-consuming",
                     "Never criticize someone until you've walked a mile in their shoes. That way, when you criticize them, they won't be able to hear you from that far away. Plus, you'll have their shoes.",
@@ -35,6 +45,11 @@
              "patterns": ["how old","how old are you?","what is your age","how old are you","age?"],
              "responses":["I get reborn after every compilation","my developers are averagely 20 years!"]
             },
+            {
+                "tag":"well being",
+                "patterns": ["how are you feeling","how are you?","how is your well being","how do you do today","how do you feel?"],
+                "responses":["I am fine thank you.","I am doing good and you"]
+               },
             {
              "tag":"job",
              "patterns": ["what do you do","how can you help me","what is your job","tell me what you love to do","can you tell me what you can offer"],
@@ -142,7 +157,7 @@
                                   "What drug is best for fever?",
                                   "what medication can I take for fever?",
                                   "Drug or medicine for fever"],
-                "responses":["medicines you can consume : acetaminophen ,ibuprofen,aspirin,Crocin Cold & Flu Max."]
+                "responses":["medicines you can consume for fever includes: acetaminophen ,ibuprofen,aspirin,Crocin Cold & Flu Max."]
                },
                {
                    "tag":"fever food",
@@ -185,6 +200,15 @@
              "I started exprencing these symptoms 3 day ago"],
              "responses":["early stage of typhoid"]
             },
+            {
+                "tag":"typhoid prevention",
+                "patterns":["What can I do to avoid getting typhoid?",
+                               "tell me some prevention method for typhoid",
+                               "What should I do if i am suffering from typhoid?",
+                               "How can I avoid getting a typhoid?",
+                               "Any Preventions for typhoid"],
+                "responses":["Wash your hands carefully with soap and water regulaly, practice safe eating and drinking habit by eating foods that have been thoroughly cooked and are still hot and steaming and not drinking untreated water"]
+               },
             {
                 "tag":"depression prevention",
                 "patterns":["What can I do to avoid getting depression?",
